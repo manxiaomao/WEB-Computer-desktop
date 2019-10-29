@@ -49,6 +49,9 @@ $(document).ready(function() {
 /**
  * 导航锁定
  */
+$(".shuod").click(function(){
+    dhkg()
+});
 function dhkg() {
 	if (dhstyle) {
 		dhstyle = false;
