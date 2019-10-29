@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!-- 
+	    @B@qr                                           
+	    q v@B@Br     rvr777rvr                          
+	    1   @B@M0PB@@B@@@B@B@B@@@Fr    qOM@BMB@E8r      
+	    7    U71M@B@B@B@B@B@B@B@@@BB5@B@B@B@J   J7      
+	    J   7F@@@B@B@B@@@B@B@B@@@B@@@YUNL       B       
+	    U  M@@@@B@B@B@B@B@B@B@B@B@B@B@1r       S        
+	    0YOB@B@B@B@B@B@B@B@B@B@B@B@B@B@G      ir        
+	    JZB@B@B@B@B@B@B@B@B@B@B@B@B@B@B@O     2         
+	    SB@B@B@B@B@B@B漫小猫@B@B@B@B@B@B@B@U   X          
+	    B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@BZ  k           
+	   r@B@@@@@B@B@B@B@B@B@B@B@B@B@@@BB1PFur    8@@@     
+	    B@LkB@B@@@B@B@B@B@B@B@B@B@BBFL7FBXu    8B@BM    
+	    BBOLruMB@@@B@B@B@B@B@@@B@PL718@B@YNBi  P@B@M    
+	    U@B@MuiYM@B@B@B@B@B@B@M2rL0@B@B@BiM@O  G@@Bq    
+	     P@B@B@UtJ@B@B@B@@@BMYruMB@@@B@B27@BEU@@@B@     
+	    LGN@@@B@@2r0B@B@B@OLrSB@@@B@B@BBv1B@EZB@BL      
+	   LMOvruu1M@B@XXB@B@NFM@B@B@B@B@@Gv8MJ0S7r         
+	             MXM.URL:WWW.LXBKW.COM                   
+-->	
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0,viewport-fit=cover">
+<title>二次元相册——桌面</title>
+<!--<link rel="stylesheet" type="text/css" href="css/normalize.css" />-->
+<!--CSS RESET-->
+<!--<link rel="stylesheet" type="text/css" href="css/base.css">-->
+<!--演示页面样式，使用时可以不引用-->
+<!--必要样式-->
+<link href="css/photopile.css" rel="stylesheet">
+<link href="css/mxm.css" rel="stylesheet">
+</head>
+<body>
+	<!--导航框-->
+	<div id="dhwk">
+	<div id="dh">
+		<div class="dropdown">
+			<div class="shuod"></div>
+		</div>
+		<div class="dropdown">
+			<a class="dropbtn">投食</a>
+		</div>
+		<div class="dropdown">
+			<a class="dropbtn" id="xc">开相册</a>
+		</div>
+		<div class="dropdown">
+			<a class="dropbtn" id="sj">关时间</a>
+		</div>
+		<div class="dropdown">
+			<a class="dropbtn" id="yh">烟花绽放</a>
+		</div>
+		<div class="dropdown">
+			<a class="dropbtn" id="bgkg">恢复背景</a>
+		</div>
+		<div class="dropdown">
+			<a class="dropbtn">本地背景</a>
+		</div>
+		<div class="dropdown">
+			<a class="dropbtn">风景背景</a>
+		</div>
+		<div class="dropdown">
+			<a class="dropbtn">动漫背景</a>
+		</div>
+	</div>
+	</div>
+	<div class="photopile-wrapper">
+		<h1 class="time"><div id="output"></div><b id="tqxx"></b></h1>
+		<ul class="photopile" style="display:none">
+			<!--图片位置-->
+		</ul>
+		<ul class="yanhuan" style="display:none"></ul>
+	</div>
+</body>
+<script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.ui.touch-punch.min.js"></script>
+<script src="js/photopile.js"></script>
+<script type="text/javascript" src="js/mxm.js" ></script>
+<script type="text/javascript">
+$(function(){
+	PhotoPile().scatter();
+});
+</script>
+<script type="text/javascript" src="js/jquery.fireworks.js"></script>
+<script type="text/javascript">
+	$('.yanhuan').fireworks({ 
+	  sound: false,
+	  opacity: 0.9, 
+	  width: '100%', 
+	  height: '100%' 
+	});
+</script>
+</html>

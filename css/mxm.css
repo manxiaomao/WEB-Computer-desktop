@@ -1,0 +1,688 @@
+/**
+ * 作者：漫小猫
+ * QQ:2535080855
+ * Q群：536321009
+ */
+html,
+body {
+	width: 100%;
+	height: 100%;
+	margin:auto auto;
+	top: 0px;
+	bottom: 0px;
+	background-color: #00bcd4;
+	overflow: hidden;
+	word-break: break-all;
+	color: #D5D6E2;
+	font-weight: 500;
+	font-size: 1.05em;
+	font-family: "Microsoft YaHei", "Segoe UI", "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+@font-face {
+	font-family: 'Digital-7';
+	src: url(./font/digital-7.ttf);
+}
+
+@font-face {
+	font-family: 'Got No Time For That';
+	src: url(./font/Got_No_Time_For_That.ttf);
+}
+
+body {
+	cursor: url('../images/blue.cur'), auto;
+}
+
+div.photopile-wrapper {
+	margin: 175px auto;
+	width: 80%;
+}
+
+li {
+	list-style: none;
+}
+
+#dh {
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	z-index: 999;
+	background-color: #000;
+	box-shadow: rgba(0, 0, 0, 0.88) 20px 20px 35px 0px;
+}
+#dhwk{
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	z-index: 998;
+}
+#fireworksField{
+	z-index: 995;
+}
+.shuod{
+	background-image:url(../images/k.png);
+	background-size:100% 100%;
+	width: 60px;
+	height: 25px;
+	line-height: 50px;
+}
+
+
+
+#dh li i {
+	width: 60px;
+	height: 50px;
+	background-color: white;
+	line-height: 50px;
+	text-align: center;
+	border-right: 1px #000 solid;
+}
+
+#dh li img {
+	width: 120px;
+	height: 50px;
+	position: absolute;
+	top: 0px;
+	left: 45%;
+}
+
+#dh li p {
+	width: 60px;
+	height: 50px;
+	background-color: #000;
+	line-height: 50px;
+	text-align: center;
+	color: #fff;
+	position: absolute;
+	right: 0px;
+	top: -17px;
+	border-left: 1px #fff solid;
+}
+
+.dropbtn {
+	background-color: #4CAF50;
+	color: white;
+	padding: 10px;
+	font-size: 16px;
+	border: none;
+	cursor: url('../images/fcous.cur'), auto;
+	/* cursor: pointer; */
+	text-decoration: none;
+	border-radius: 10px;
+}
+
+.dropdown {
+	margin: 5px;
+	top: 7px;
+	float: right;
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: rgba(3, 169, 244, 0.62);
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: rgba(230, 29, 14, 0.65);
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown:hover .dropbtn {
+	background-color: #3e8e41;
+}
+
+#output {
+	font-family: 'Digital-7', sans-serif;
+	font-weight: 100;
+	font-size: 140px;
+	color: #fff;
+	text-shadow: 2px 2px 4px #000;
+
+}
+
+.time {
+	margin: auto auto;
+	top: 0px;
+	bottom: 0px;
+	overflow: hidden;
+	word-break: break-all;
+	text-align: center;
+}
+
+#manhz {
+	width: 100%;
+	height: 496px;
+	top: 0px;
+	bottom: 0px;
+	overflow: hidden;
+	word-break: break-all;
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+	background-color: rgba(0, 0, 0, 0.84);
+}
+
+#manhz {
+	margin: auto;
+	text-align: center;
+}
+
+.row {
+	margin-left: 10%;
+}
+
+.col-sm-6 {
+	width: 30%;
+	height: 50%;
+	float: left;
+}
+
+.thumbnail img {
+	width: 98%;
+	height: 98%;
+}
+
+.caption h3 {
+	margin: auto;
+	text-align: center;
+}
+
+b,
+p {
+	color: #FFF;
+}
+
+b {
+	font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*漫小猫个人博客：www.lxbkw.com*/
