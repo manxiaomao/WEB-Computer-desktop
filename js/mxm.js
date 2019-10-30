@@ -348,6 +348,12 @@ function preloadimages(arr) {
 	}
 }
 
+//下拉框
+$('#dd').click(function(event){
+	if(event.eventPhase==2){
+		$(this).toggleClass('active');
+	}
+});
 /**
  * 消息框
  */
