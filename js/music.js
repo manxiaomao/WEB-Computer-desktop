@@ -75,54 +75,6 @@ window.AudioContext = window.AudioContext || window.webkitAudioContext || window
         source = next;
     }
 
-
-/**
- * 播放完成后的回调
- * @return null
- */
-function onPlayEnded() {
-    var acState = ac.state;
-    // 在进行上一曲和下一曲或者跳跃播放的时候
-    // 如果调用stop方法，会进入当前回调，因此要作区分
-    // 上一曲和下一曲的时候，由于是新的资源，因此采用关闭当前的AduioContext, load的时候重新生成
-    // 这样acState的状态就是suspended，这样就不会出现播放错位
-    // 而在跳跃播放的时候，由于是同一个资源，因此加上skip标志就可以判断出来
-    // 发现如果是循环播放，onPlayEnded方法不会被执行，因此采用加载相同索引的方式
-    if (acState === 'running' && !skip) {
-        var index = getNextPlayIndex();
-        loadMusic(playItems[index], index);
-    }
-}
-
-//监听音乐实时播放的时间
-     function watchMusicTime(){
-            let _this = this;
-			console.log(ac.currentTime)
-            //监听播放时间
-            // let musicDom = document.getElementsByTagName('audio')[0];//获取Audio的DOM节点
-            //使用事件监听方式捕捉事件
-            ac.addEventListener("timeupdate",function(){//监听音频播放的实时时间事件
-                let timeDisplay;
-                //用秒数来显示当前播放进度
-                timeDisplay = Math.floor(ac.currentTime);//获取实时时间
-                console.log(timeDisplay)
-                //处理时间
-                //分钟
-                let minute = timeDisplay / 60;
-                let minutes = parseInt(minute);
-                if (minutes < 10) {
-                    minutes = "0" + minutes;
-                }
-                //秒
-                let second = timeDisplay % 60;
-                let seconds = Math.round(second);
-                if (seconds < 10) {
-                    seconds = "0" + seconds;
-                }
-                _this.$store.state.realMusicTime = minutes+":"+seconds;//将实时时间存储到vuex中
-                console.log(_this.$store.state.realMusicTime);
-            },false);
-        }
     fileInput.onchange = function () {
         if (fileInput.files.length > 0) {
             addMusic(fileInput.files);

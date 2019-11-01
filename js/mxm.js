@@ -108,9 +108,11 @@ $('#dh').on('click', 'div', function() {
 			break;
 		case "投食":
 			kzanzu()
+			$("#right").hide();
 			console.log("进入投食")
 			break;
 		default:
+			$("#right").show();
 			console.log("错误")
 	}
 });
